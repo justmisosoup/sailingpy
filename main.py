@@ -24,10 +24,10 @@ class App:
     @staticmethod
     async def run(turbine: Runtime):
         try:
-            source = await turbine.resources("my-spire")
-            records = await source.records("")
+            source = await turbine.resource("my-spire")
+            records = await source.record("")
             sailing = await turbine.process(records, ships_in_san_francisco_bay)
-            destination_db = await turbine.resources("sailingwh")
+            destination_db = await turbine.resource("sailingwh")
             await destination_db.write(sailing, "")
         except Exception as e:
             print(e, file=sys.stderr)
