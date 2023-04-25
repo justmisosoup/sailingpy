@@ -7,10 +7,10 @@ from models import Record, RecordList
 
 
 def ships_in_san_francisco_bay(records: RecordList) -> RecordList:
-    """
-    This function takes a RecordList as input and returns a filtered list of records with shipType 'SAILING' and
-    lastPositionUpdate latitude and longitude data that puts them in the San Francisco Bay Area Waters.
-    """
+
+    # This function takes a RecordList as input and returns a filtered list of records with shipType 'SAILING' and
+    # lastPositionUpdate latitude and longitude data that puts them in the San Francisco Bay Area Waters.
+
     def is_in_san_francisco_bay(record: Record) -> bool:
         latitude = record.value["lastPositionUpdate"]["latitude"]
         longitude = record.value["lastPositionUpdate"]["longitude"]
