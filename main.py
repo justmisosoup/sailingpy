@@ -41,7 +41,7 @@ class App:
             # or bucket name in your data store.
             # If you need additional connector configurations, replace '{}'
             # with the key and value, i.e. {"incrementing.field.name": "id"}
-            records = await source.records("")
+            records = await source.records("*")
 
             # Specify what code to execute against upstream records
             # with the `process` function.
@@ -60,6 +60,6 @@ class App:
             # or bucket name in your data store.
             # If you need additional connector configurations, replace '{}'
             # with the key and value, i.e. {"behavior.on.null.values": "ignore"}
-            await destination_db.write(sailing, "")
+            await destination_db.write(sailing, "*")
         except Exception as e:
             print(e, file=sys.stderr)
