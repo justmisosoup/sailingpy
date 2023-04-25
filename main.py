@@ -66,6 +66,6 @@ class App:
             # or bucket name in your data store.
             # If you need additional connector configurations, replace '{}'
             # with the key and value, i.e. {"behavior.on.null.values": "ignore"}
-            await destination_db.write(sailing, "collection_archive", {})
+            await destination_db.write(sailing, "", {})
         except Exception as e:
             print(e, file=sys.stderr)
