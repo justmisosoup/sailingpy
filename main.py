@@ -2,12 +2,6 @@ import hashlib
 import logging
 import sys
 
-from turbine.runtime import RecordList
-from turbine.runtime import Runtime
-
-logging.basicConfig(level=logging.INFO)
-
-
 from typing import List
 from models import Record, RecordList
 
