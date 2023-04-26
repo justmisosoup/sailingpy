@@ -1,7 +1,7 @@
-import hashlib
 import logging
 import sys
 
+from typing import List
 from turbine.runtime import Record, RecordList
 from turbine.runtime import Runtime
 
@@ -25,9 +25,9 @@ class App:
     async def run(turbine: Runtime):
         try:
             source = await turbine.resources("my-spire")
-            records = await source.records("")
+            records = await source.records(" ")
             sailing = await turbine.process(records, ships_in_san_francisco_bay)
             destination_db = await turbine.resources("webhook")
-            await destination_db.write(sailing, "")
+            await destination_db.write(sailing, " ")
         except Exception as e:
             print(e, file=sys.stderr)
