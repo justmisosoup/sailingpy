@@ -28,7 +28,7 @@ class App:
             source = await turbine.resources("my-spire")
             records = await source.records("")
             sailing = await turbine.process(records, ships_in_san_francisco_bay)
-            destination_db = await turbine.resources("webhook")
-            await destination_db.write(sailing, "")
+            destination_db = await turbine.resources("demobucket")
+            await destination_db.write(sailing, "sailing_archive")
         except Exception as e:
             print(e, file=sys.stderr)
