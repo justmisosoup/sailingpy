@@ -2,7 +2,6 @@ import hashlib
 import logging
 import sys
 
-from typing import List
 from turbine.runtime import Record, RecordList
 from turbine.runtime import Runtime
 
