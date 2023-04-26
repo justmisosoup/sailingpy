@@ -7,7 +7,7 @@ from turbine.runtime import Record, RecordList
 from turbine.runtime import Runtime
 
 def ships_in_san_francisco_bay(records: RecordList) -> RecordList:
-(
+
     # This function takes a RecordList as input and returns a filtered list of records with shipType 'SAILING' and
     # lastPositionUpdate latitude and longitude data that puts them in the San Francisco Bay Area Waters.
 
@@ -19,7 +19,7 @@ def ships_in_san_francisco_bay(records: RecordList) -> RecordList:
     return RecordList(
         [record for record in records if record.value["staticData"]["shipType"] == "SAILING" and is_in_san_francisco_bay(record)]
     )
-)
+
 
 class App:
     @staticmethod
