@@ -3,7 +3,8 @@ import logging
 import sys
 
 from typing import List
-from models import Record, RecordList
+from turbine.runtime import Record, RecordList
+from turbine.runtime import Runtime
 
 
 def ships_in_san_francisco_bay(records: RecordList) -> RecordList:
@@ -24,10 +25,10 @@ class App:
     @staticmethod
     async def run(turbine: Runtime):
         try:
-            source = await turbine.resource("my-spire")
-            records = await source.record("")
+            source = await turbine.resources("my-spire")
+            records = await source.records("")
             sailing = await turbine.process(records, ships_in_san_francisco_bay)
-            destination_db = await turbine.resource("sailingwh")
+            destination_db = await turbine.resources("sailingwh")
             await destination_db.write(sailing, "")
         except Exception as e:
             print(e, file=sys.stderr)
