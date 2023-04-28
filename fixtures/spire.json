@@ -1,0 +1,466 @@
+{
+    "schema": {
+      "type": "struct",
+      "name": "resource_18330_773113.Envelope",
+      "fields": [
+        {
+          "type": "struct",
+          "optional": true,
+          "fields": [
+            {
+              "type": "struct",
+              "optional": true,
+              "fields": [
+                {
+                  "type": "string",
+                  "field": "destination"
+                },
+                {
+                  "type": "double",
+                  "field": "draught"
+                },
+                {
+                  "type": "string",
+                  "field": "eta"
+                },
+                {
+                  "type": "string",
+                  "field": "timestamp"
+                },
+                {
+                  "type": "string",
+                  "field": "updateTimestamp"
+                }
+              ],
+              "field": "currentVoyage"
+            },
+            {
+              "type": "string",
+              "field": "id"
+            },
+            {
+              "type": "string",
+              "field": "updateTimestamp"
+            },
+            {
+              "type": "struct",
+              "optional": true,
+              "fields": [
+                {
+                  "type": "struct",
+                  "optional": true,
+                  "fields": [
+                    {
+                      "type": "double",
+                      "field": "length"
+                    },
+                    {
+                      "type": "double",
+                      "field": "a"
+                    },
+                    {
+                      "type": "double",
+                      "field": "b"
+                    },
+                    {
+                      "type": "double",
+                      "field": "c"
+                    },
+                    {
+                      "type": "double",
+                      "field": "d"
+                    },
+                    {
+                      "type": "double",
+                      "field": "width"
+                    }
+                  ],
+                  "field": "dimensions"
+                },
+                {
+                  "type": "string",
+                  "field": "aisClass"
+                },
+                {
+                  "type": "string",
+                  "field": "flag"
+                },
+                {
+                  "type": "string",
+                  "field": "name"
+                },
+                {
+                  "type": "string",
+                  "field": "callsign"
+                },
+                {
+                  "type": "string",
+                  "field": "timestamp"
+                },
+                {
+                  "type": "string",
+                  "field": "updateTimestamp"
+                },
+                {
+                  "type": "string",
+                  "field": "shipType"
+                },
+                {
+                  "type": "string",
+                  "field": "shipSubType"
+                },
+                {
+                  "type": "double",
+                  "field": "mmsi"
+                },
+                {
+                  "type": "double",
+                  "field": "imo"
+                }
+              ],
+              "field": "staticData"
+            },
+            {
+              "type": "struct",
+              "optional": true,
+              "fields": [
+                {
+                  "type": "string",
+                  "field": "accuracy"
+                },
+                {
+                  "type": "string",
+                  "field": "collectionType"
+                },
+                {
+                  "type": "double",
+                  "field": "longitude"
+                },
+                {
+                  "type": "string",
+                  "field": "maneuver"
+                },
+                {
+                  "type": "string",
+                  "field": "navigationalStatus"
+                },
+                {
+                  "type": "double",
+                  "field": "speed"
+                },
+                {
+                  "type": "string",
+                  "field": "timestamp"
+                },
+                {
+                  "type": "double",
+                  "field": "course"
+                },
+                {
+                  "type": "double",
+                  "field": "heading"
+                },
+                {
+                  "type": "double",
+                  "field": "latitude"
+                },
+                {
+                  "type": "double",
+                  "field": "rot"
+                },
+                {
+                  "type": "string",
+                  "field": "updateTimestamp"
+                }
+              ],
+              "field": "lastPositionUpdate"
+            }
+          ],
+          "field": "before"
+        },
+        {
+          "type": "struct",
+          "optional": true,
+          "fields": [
+            {
+              "type": "string",
+              "field": "id"
+            },
+            {
+              "type": "string",
+              "field": "updateTimestamp"
+            },
+            {
+              "type": "struct",
+              "optional": true,
+              "fields": [
+                {
+                  "type": "struct",
+                  "optional": true,
+                  "fields": [
+                    {
+                      "type": "double",
+                      "field": "a"
+                    },
+                    {
+                      "type": "double",
+                      "field": "b"
+                    },
+                    {
+                      "type": "double",
+                      "field": "c"
+                    },
+                    {
+                      "type": "double",
+                      "field": "d"
+                    },
+                    {
+                      "type": "double",
+                      "field": "width"
+                    },
+                    {
+                      "type": "double",
+                      "field": "length"
+                    }
+                  ],
+                  "field": "dimensions"
+                },
+                {
+                  "type": "string",
+                  "field": "shipSubType"
+                },
+                {
+                  "type": "string",
+                  "field": "aisClass"
+                },
+                {
+                  "type": "string",
+                  "field": "flag"
+                },
+                {
+                  "type": "string",
+                  "field": "name"
+                },
+                {
+                  "type": "string",
+                  "field": "callsign"
+                },
+                {
+                  "type": "string",
+                  "field": "timestamp"
+                },
+                {
+                  "type": "string",
+                  "field": "updateTimestamp"
+                },
+                {
+                  "type": "string",
+                  "field": "shipType"
+                },
+                {
+                  "type": "double",
+                  "field": "mmsi"
+                },
+                {
+                  "type": "double",
+                  "field": "imo"
+                }
+              ],
+              "field": "staticData"
+            },
+            {
+              "type": "struct",
+              "optional": true,
+              "fields": [
+                {
+                  "type": "string",
+                  "field": "collectionType"
+                },
+                {
+                  "type": "double",
+                  "field": "longitude"
+                },
+                {
+                  "type": "string",
+                  "field": "maneuver"
+                },
+                {
+                  "type": "string",
+                  "field": "navigationalStatus"
+                },
+                {
+                  "type": "double",
+                  "field": "speed"
+                },
+                {
+                  "type": "string",
+                  "field": "timestamp"
+                },
+                {
+                  "type": "string",
+                  "field": "accuracy"
+                },
+                {
+                  "type": "double",
+                  "field": "heading"
+                },
+                {
+                  "type": "double",
+                  "field": "latitude"
+                },
+                {
+                  "type": "double",
+                  "field": "rot"
+                },
+                {
+                  "type": "string",
+                  "field": "updateTimestamp"
+                },
+                {
+                  "type": "double",
+                  "field": "course"
+                }
+              ],
+              "field": "lastPositionUpdate"
+            },
+            {
+              "type": "struct",
+              "optional": true,
+              "fields": [
+                {
+                  "type": "string",
+                  "field": "destination"
+                },
+                {
+                  "type": "double",
+                  "field": "draught"
+                },
+                {
+                  "type": "string",
+                  "field": "eta"
+                },
+                {
+                  "type": "string",
+                  "field": "timestamp"
+                },
+                {
+                  "type": "string",
+                  "field": "updateTimestamp"
+                }
+              ],
+              "field": "currentVoyage"
+            }
+          ],
+          "field": "after"
+        },
+        {
+          "type": "struct",
+          "optional": true,
+          "fields": [
+            {
+              "type": "string",
+              "field": "opencdc.readAt"
+            },
+            {
+              "type": "string",
+              "field": "opencdc.version"
+            },
+            {
+              "type": "string",
+              "field": "conduit.source.connector.id"
+            },
+            {
+              "type": "string",
+              "field": "opencdc.createdAt"
+            }
+          ],
+          "field": "source"
+        },
+        {
+          "type": "string",
+          "field": "op"
+        },
+        {
+          "type": "int64",
+          "optional": true,
+          "field": "ts_ms"
+        },
+        {
+          "type": "struct",
+          "optional": true,
+          "fields": [
+            {
+              "type": "string",
+              "field": "id"
+            },
+            {
+              "type": "int64",
+              "field": "total_order"
+            },
+            {
+              "type": "int64",
+              "field": "data_collection_order"
+            }
+          ],
+          "field": "transaction"
+        }
+      ]
+    },
+    "payload": {
+      "before": null,
+      "after": {
+        "currentVoyage": {
+          "destination": "",
+          "draught": 0,
+          "eta": "",
+          "timestamp": "",
+          "updateTimestamp": ""
+        },
+        "id": "001033db-1dc2-3df2-a70f-ae847e5e7764",
+        "lastPositionUpdate": {
+          "accuracy": "",
+          "collectionType": "TERRESTRIAL",
+          "course": 20.7,
+          "heading": 129,
+          "latitude": 38,
+          "longitude": -123,
+          "maneuver": "NOT_AVAILABLE",
+          "navigationalStatus": "NOT_DEFINED_DEFAULT",
+          "rot": 0,
+          "speed": 0,
+          "timestamp": "2023-04-23T22:35:01.787Z",
+          "updateTimestamp": "2023-04-23T22:35:03.497Z"
+        },
+        "staticData": {
+          "aisClass": "B",
+          "callsign": "9HB7928",
+          "dimensions": {
+            "a": 6,
+            "b": 5,
+            "c": 2,
+            "d": 2,
+            "length": 11,
+            "width": 4
+          },
+          "flag": "MT",
+          "imo": 0,
+          "mmsi": 256002110,
+          "name": "YALOU",
+          "shipSubType": "",
+          "shipType": "SAILING",
+          "timestamp": "2023-01-27T08:32:27.000Z",
+          "updateTimestamp": "2023-01-27T08:40:44.449Z"
+        },
+        "updateTimestamp": "2023-04-23T22:35:03.497Z"
+      },
+      "source": {
+        "conduit.source.connector.id": "8e2a0435-5704-46b4-9c65-22ca78b38971",
+        "opencdc.createdAt": "1682289303497000000",
+        "opencdc.readAt": "1682534889718343651",
+        "opencdc.version": "v1"
+      },
+      "op": "c",
+      "ts_ms": 1682534889718,
+      "transaction": null
+    }
+  }
