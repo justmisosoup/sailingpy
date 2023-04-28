@@ -17,7 +17,7 @@ def ships_in_san_francisco_bay(records: RecordList) -> RecordList:
         return 37.5 <= latitude <= 38.2 and -123.0 <= longitude <= -122.2
 
     return RecordList(
-        [record for record in records if record.value["staticData"]["shipType"] == "SAILING" and is_in_san_francisco_bay(record)]
+        [record for record in records if record.value["shipType"] == "SAILING" and is_in_san_francisco_bay(record)]
     )
 
 
