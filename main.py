@@ -14,6 +14,7 @@ def ships_in_san_francisco_bay(records: RecordList) -> RecordList:
     def is_in_san_francisco_bay(record: Record) -> bool:
         latitude = record.value["lastPositionUpdate"]["latitude"]
         longitude = record.value["lastPositionUpdate"]["longitude"]
+        print(latitude)
         return 37.5 <= latitude <= 38.2 and -123.0 <= longitude <= -122.2
 
     rl = RecordList()
