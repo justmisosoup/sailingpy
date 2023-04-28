@@ -12,7 +12,7 @@ class App:
         try:
             source = await turbine.resources("my-spire")
             records = await source.records("")
-            destination_db = await turbine.resources("kafka")
-            await destination_db.write(records, "demo")
+            destination_db = await turbine.resources("demobucket")
+            await destination_db.write(records, "sailingpy_archive")
         except Exception as e:
             print(e, file=sys.stderr)
